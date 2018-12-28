@@ -1,0 +1,87 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Philosophy Books</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col s12 l8 offset-l2">
+          <div class="center">
+            <h1>
+              Philosophy Books
+              <i class="material-icons medium green-text text-darken-3"
+                >import_contacts</i
+              >
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALERT shows up here -->
+
+      <form id="form-book">
+        <div class="row">
+          <div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+            <i class="material-icons green-text text-darken-3 prefix">title</i>
+            <input id="title" type="text" class="validate" />
+            <label class="active" for="title">Title</label>
+          </div>
+
+          <div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+            <i class="material-icons green-text text-darken-3 prefix">person</i>
+            <input id="author" type="text" class="validate" />
+            <label class="active" for="author">Author</label>
+          </div>
+
+          <div class="input-field col s12 m10 offset-m1 l8 offset-l2">
+            <i class="material-icons green-text text-darken-3 prefix">public</i>
+            <input id="school" type="text" class="validate" />
+            <label class="active" for="school">School</label>
+          </div>
+
+          <div class="col s12 center">
+            <button
+              class="btn-large waves-effect waves-light green darken-3"
+              type="submit"
+            >
+              Submit <i class="material-icons right">send</i>
+            </button>
+          </div>
+        </div>
+      </form>
+
+      <div class="row">
+        <div class="col s12 m10 offset-m1">
+          <table>
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Author</th>
+                <th>School</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody id="book-list"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <script src="appFunctions.js"></script>
+    <!--
+    <script src="appWithClasses.js"></script>
+    -->
+  </body>
+</html>
